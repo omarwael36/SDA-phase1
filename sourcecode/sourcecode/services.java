@@ -1,7 +1,7 @@
 package sourcecode;
 
 import java.util.ArrayList;
-public class services {
+public abstract class services {
 	public ArrayList<String> name = new ArrayList<String>();
 	public services() {
 		name.add("mobile recharge");
@@ -13,4 +13,5 @@ public class services {
 		name.add("refund");
 	}
 	
+	abstract public float cost(int n);
 }

@@ -37,8 +37,5 @@ public class userInfo {
 		this.wallet_amount = wallet_amount;
 	}
 	
-
-	
-	
 	
 }

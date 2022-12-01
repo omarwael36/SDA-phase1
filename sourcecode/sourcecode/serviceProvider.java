@@ -1,5 +1,5 @@
 package sourcecode;
 
-public class serviceProvider {
-
+public abstract class serviceProvider {
+	abstract public services createService(String s);
 }
