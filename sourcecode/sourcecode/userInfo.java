@@ -5,45 +5,40 @@ public class userInfo {
 	private String email;
 	private String password;
 	private String username;
-	private static int walletID;
-	public userInfo(String e,String pw,String un){
-		this.email=e;
-		this.password=pw;
-		this.username = un;
+	private float wallet_amount;
+	public userInfo() {
+		this.email = " ";
+		this.password = " ";
+		this.username = " ";
+		this.wallet_amount = 0;
 	}
 	public String getEmail() {
 		return email;
 	}
-
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getPassword() {
 		return password;
 	}
-
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	public String getUsername() {
 		return username;
 	}
-
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public float getWallet_amount() {
+		return wallet_amount;
+	}
+	public void setWallet_amount(float wallet_amount) {
+		this.wallet_amount = wallet_amount;
+	}
 	
 
-	public int getWalletID() {
-		return walletID;
-	}
-
 	
-	public void signup() {
-		
-		
-	}
-	public boolean login (String un,String pw) {
-		if(this.getUsername()==un && this.getPassword()==pw ) {
-			System.out.println("login successfully !");
-			return true;
-		}
-		else {
-			System.out.println("Error! you entered a wrong username or password");
-			System.out.println("please try again!");
-			return false;
-		}
-	}
+	
 	
 }

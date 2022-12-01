@@ -1,5 +1,5 @@
 package sourcecode;
 
-public class mobileRecharge {
+public class mobileRecharge extends services {
 
 }

@@ -1,5 +1,5 @@
 package sourcecode;
 
-public class internetPayment {
+public class internetPayment extends services {
 
 }
