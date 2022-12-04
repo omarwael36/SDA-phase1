@@ -6,3 +6,4 @@
 <img alt="Night Coding" src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif" align="right"/>
 software design phase 1
 Fawry System 
+<img align="right" src="https://raw.githubusercontent.com/SubhadeepZilong/SubhadeepZilong/main/icons/animation_500_kxa883sd.gif" alt="Unfortunately I didn't find the author of the pic, feel to open a pull request if found" width="30%" />
