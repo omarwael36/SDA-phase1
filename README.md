@@ -8,7 +8,7 @@ Software Design Phase 1
 Fawry System
 <img align="right" src="https://raw.githubusercontent.com/SubhadeepZilong/SubhadeepZilong/main/icons/animation_500_kxa883sd.gif" alt="Unfortunately I didn't find the author of the pic, feel to open a pull request if found" width="30%" />
 <h1 align="center">Project overview 👋</h1>
-# Description <br>
+<h3 align="center">Description 👋</h3> <br>
 In this project you will work on building something similar to Fawry system. This system should 
 be user by users to pay for different services. <br>The initial services are<br>
 a. Mobile recharge services.<br>
@@ -28,7 +28,7 @@ d. Donations<br>
 i. Cancer Hospital<br>
 ii. Schools<br>
 iii. NGOs (Non profitable organizations)<br>
-# Requirements<br>
+<h3 align="center">Requirements 👋</h3> <br>
 # User <br>
 1. The user should be able to signin to the system. Given the user’s email and a password, 
 the user can login to the system and use any of the system functionalities.<br>
