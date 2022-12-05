@@ -6,12 +6,12 @@ public class credit extends payment {
 	private String securitydate;
 	private String cardnumber;
 	
-	public credit() {
-		
+	public credit(double a) {
+		this.setAmount(a);
 	}
 	public double pay(double c) {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return (this.getAmount()-c);
 	}
 	public double getAmount() {
 		return amount;
