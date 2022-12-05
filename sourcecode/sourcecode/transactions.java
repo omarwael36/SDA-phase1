@@ -1,23 +1,25 @@
 package sourcecode;
 
-import java.time.LocalDateTime;
 
 public class transactions {
-	private int ID;
-	private LocalDateTime t;
+	static int ID = 0;
+	private String t;
 	private String source;
 	private serviceProvider sp;
-	private float amount;
+	private double amount;
+	public transactions() {
+		ID++;
+	}
 	public int getID() {
 		return ID;
 	}
 	public void setID(int iD) {
 		ID = iD;
 	}
-	public LocalDateTime getT() {
+	public String getT() {
 		return t;
 	}
-	public void setT(LocalDateTime t) {
+	public void setT(String t) {
 		this.t = t;
 	}
 	public String getSource() {
@@ -32,11 +34,11 @@ public class transactions {
 	public void setSp(serviceProvider sp) {
 		this.sp = sp;
 	}
-	public float getAmount() {
+	public double getAmount() {
 		return amount;
 	}
-	public void setAmount(float amount) {
-		this.amount = amount;
+	public void setAmount(double d) {
+		this.amount = d;
 	}
 	public void showDetails() {
 		System.out.println("the transaction ID is : " + this.getID());

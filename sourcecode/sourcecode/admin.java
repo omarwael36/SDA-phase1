@@ -22,12 +22,6 @@ public class admin {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public void addnewSP(String n) {
-		serviceProvider sp = new serviceProvider();
-		sp.setName(n);
-	}
-	public void addDiscount(String code,float rate) {
-		discount dis = new specificDiscount(code, rate);
-	}
+	
 	
 }

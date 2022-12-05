@@ -1,10 +1,10 @@
 package sourcecode;
 
 import java.util.ArrayList;
-public class users {
+public class userscontroller {
 	public ArrayList<userInfo> u =new ArrayList<userInfo>();
 	
-	public users() {
+	public userscontroller() {
 		
 	}
 	public boolean signup(String un , String e ,String pw) {

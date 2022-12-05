@@ -1,8 +1,9 @@
 package sourcecode;
 
-public class monthlyReciept extends services {
-public float cost(int n) {
+public class monthlyReciept extends landline {
+	public double cost(int n,int i) {
 		
-		return (float) (n * 30);
+		return (n * 30);
 	}
+	
 }

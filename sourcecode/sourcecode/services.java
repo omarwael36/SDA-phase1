@@ -1,17 +1,23 @@
 package sourcecode;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 public abstract class services {
 	public ArrayList<String> name = new ArrayList<String>();
-	public services() {
-		name.add("mobile recharge");
-		name.add("internet payment");
-		name.add("donations");
-		name.add("monthly reciept");
-		name.add("quarter reciept");
-		name.add("wallet recharge");
-		name.add("refund");
-	}
+	int index ;
+	public double amount;
+	public ArrayList<serviceProvider> sp = new ArrayList<serviceProvider>();
 	
-	abstract public float cost(int n);
+	abstract public double cost(int n , int i);
+	public void update(userInfo u) {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		LocalDateTime now = LocalDateTime.now();
+		transactions temp = new transactions();
+		temp.setAmount(amount);
+		temp.setSource(u.getUsername());
+		temp.setSp(sp.get(index));
+		temp.setT(dtf.format(now));
+		u.usertransaction.add(temp);
+	}
 }

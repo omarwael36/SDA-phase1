@@ -1,13 +1,33 @@
 package sourcecode;
 
 public class specificDiscount extends discount {
-	private float rate;
 	private services ser;
-	public specificDiscount(services s , float r) {
-		this.ser = s;
-		this.rate = r;
+	private String promocode;
+	public specificDiscount() {
+		dis.add("overall discount");
 	}
-	abstract public float cost(int n) {
-		
+	public specificDiscount(String n) {
+		dis.add(n);
+	}
+	public specificDiscount(services s , float r,String pc){
+		this.setSer(s);
+		this.setRate(r);
+		promocode = pc;
+	}
+	public double cost(int n, int i) {
+		return getSer().cost(n , i) - (n*this.getRate()/100);
+	}
+	
+	public String getPromocode() {
+		return promocode;
+	}
+	public void setPromocode(String promocode) {
+		this.promocode = promocode;
+	}
+	public services getSer() {
+		return ser;
+	}
+	public void setSer(services ser) {
+		this.ser = ser;
 	}
 }

@@ -1,11 +1,13 @@
 package sourcecode;
 
+import java.util.ArrayList;
 
 public class userInfo {
 	private String email;
 	private String password;
 	private String username;
 	private float wallet_amount;
+	public ArrayList<transactions> usertransaction = new ArrayList<transactions>();
 	public userInfo() {
 		this.email = " ";
 		this.password = " ";
