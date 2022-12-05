@@ -1,8 +1,9 @@
 package sourcecode;
 
-public class quarterReciept extends services {
-public float cost(int n) {
+public class quarterReciept extends landline {
+public double cost(int n, int i) {
 		
-		return (float) (n * 90);
+		return (n * 90);
 	}
+ 
 }
