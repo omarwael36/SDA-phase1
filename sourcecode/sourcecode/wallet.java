@@ -1,6 +1,6 @@
 package sourcecode;
 
-public class wallet {
+public class wallet extends payment {
 	private double amount;
 
 	public double getAmount() {
@@ -9,5 +9,10 @@ public class wallet {
 
 	public void setAmount(double amount) {
 		this.amount = amount;
+	}
+
+	@Override
+	public double pay(double c) {
+		return (this.getAmount()-c);
 	}
 }

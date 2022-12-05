@@ -1,5 +1,5 @@
 package sourcecode;
 
-public class payment {
-
+abstract public class payment {
+	abstract public double pay(double c);
 }
