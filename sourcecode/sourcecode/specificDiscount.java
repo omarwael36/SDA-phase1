@@ -3,11 +3,12 @@ package sourcecode;
 public class specificDiscount extends discount {
 	private services ser;
 	private String promocode;
+	systeminfo d;
 	public specificDiscount() {
-		dis.add("overall discount");
+		d.dis.add("overall discount");
 	}
 	public specificDiscount(String n) {
-		dis.add(n);
+		d.dis.add(n);
 	}
 	public specificDiscount(services s , float r,String pc){
 		this.setSer(s);

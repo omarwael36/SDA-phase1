@@ -1,9 +1,8 @@
 package sourcecode;
-
 public class mobileRecharge extends services {
 	
-	mobileRecharge(){
-		name.add("mobile recharge");
+	mobileRecharge(systeminfo s){
+		s.servicesname.add("mobile recharge");
 		serviceProvider temp = new serviceProvider("vodafone", 0.14);
 		sp.add(temp);
 		temp = new serviceProvider("etisalat", 0.14);

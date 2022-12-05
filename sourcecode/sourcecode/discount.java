@@ -1,8 +1,9 @@
 package sourcecode;
 
+import java.util.ArrayList;
+
 abstract public class discount extends services {
 	private float rate;
-	public
 	abstract public double cost(int n,int i) ;
 	public float getRate() {
 		return rate;
@@ -11,4 +12,3 @@ abstract public class discount extends services {
 		this.rate = rate;
 	}
 }
-

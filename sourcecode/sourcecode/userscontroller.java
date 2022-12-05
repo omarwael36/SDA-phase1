@@ -32,11 +32,11 @@ public class userscontroller {
 		System.out.println("the username or password you entered is wrong");
 		return false;
 	}
-	public boolean searchService(services s, String key) {
+	public boolean searchService(systeminfo s, String key) {
 		boolean flag = false;
-		for(int i =0;i<s.name.size();i++) {
-			if(s.name.get(i).compareTo(key)>=0) {
-				System.out.println(s.name.get(i));
+		for(int i =0;i<s.servicesname.size();i++) {
+			if(s.servicesname.get(i).compareTo(key)>=0) {
+				System.out.println(s.servicesname.get(i));
 				flag=true;
 			}
 		}

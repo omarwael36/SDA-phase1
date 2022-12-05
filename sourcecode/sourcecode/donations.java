@@ -1,8 +1,8 @@
 package sourcecode;
 
 abstract public class donations extends services{
-	public donations(){
-		name.add("internet payment");
+	public donations(systeminfo s){
+		s.servicesname.add("internet payment");
 		serviceProvider temp = new serviceProvider("school",0);
 		sp.add(temp);
 		temp = new serviceProvider("NGO", 0);
@@ -14,4 +14,3 @@ abstract public class donations extends services{
 		return n +( n*sp.get(i).getTaxes());
 	}
 }
-

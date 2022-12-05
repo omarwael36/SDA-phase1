@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 public abstract class services {
-	public ArrayList<String> name = new ArrayList<String>();
 	int index ;
 	public double amount;
 	public ArrayList<serviceProvider> sp = new ArrayList<serviceProvider>();

@@ -2,11 +2,12 @@ package sourcecode;
 
 public class overallDiscount extends discount {
 	private services ser;
+	systeminfo s;
 	public overallDiscount() {
-		dis.add("overall discount");
+		s.dis.add("overall discount");
 	}
 	public overallDiscount(String n) {
-		dis.add(n);
+		s.dis.add(n);
 	}
 	public double cost(int n,int i) {
 		

@@ -3,8 +3,8 @@ package sourcecode;
 
 public class internetPayment extends services {
 
-	public internetPayment() {
-		name.add("internet payment");
+	public internetPayment(systeminfo s) {
+		s.servicesname.add("internet payment");
 		serviceProvider temp = new serviceProvider("vodafone", 0.14);
 		sp.add(temp);
 		temp = new serviceProvider("etisalat", 0.14);
