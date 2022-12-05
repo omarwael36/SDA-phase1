@@ -14,3 +14,4 @@ abstract public class donations extends services{
 		return n +( n*sp.get(i).getTaxes());
 	}
 }
+
